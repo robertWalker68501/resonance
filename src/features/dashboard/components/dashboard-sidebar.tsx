@@ -90,7 +90,7 @@ const NavSection = ({ label, items, pathname }: NavSectionProps) => {
   );
 };
 
-const DashboardSidebar = () => {
+export function DashboardSidebar() {
   const pathname = usePathname();
   const clerk = useClerk();
 
@@ -211,6 +211,4 @@ const DashboardSidebar = () => {
       <SidebarRail />
     </Sidebar>
   );
-};
-
-export default DashboardSidebar;
+}

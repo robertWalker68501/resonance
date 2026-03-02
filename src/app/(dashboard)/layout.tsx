@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 import { cookies } from 'next/headers';
 import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar';
-import DashboardSidebar from '@/features/dashboard/components/dashboard-sidebar';
+import { DashboardSidebar } from '@/features/dashboard/components/dashboard-sidebar';
 
 const DashboardLayout = async ({ children }: { children: ReactNode }) => {
   const cookieStore = await cookies();

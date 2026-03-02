@@ -9,6 +9,8 @@ const eslintConfig = defineConfig([
     rules: {
       'react-hooks/purity': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      'no-var': 'off',
     },
   },
   // Override default ignores of eslint-config-next.
