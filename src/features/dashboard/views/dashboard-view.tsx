@@ -1,6 +1,8 @@
 import { HeroPattern } from '@/features/dashboard/components/hero-pattern';
 import { PageHeader } from '@/components/page-header';
 import { DashboardHeader } from '@/features/dashboard/components/dashboard-header';
+import { TextInputPanel } from '@/features/dashboard/components/text-input-panel';
+import { QuickActionsPanel } from '@/features/dashboard/components/quick-actions-panel';
 
 export function DashboardView() {
   return (
@@ -10,8 +12,10 @@ export function DashboardView() {
         className='lg:hidden'
       />
       <HeroPattern />
-      <div className='relative space-y-8 lg:p-16'>
+      <div className='relative space-y-8 px-4 pt-4 lg:p-16'>
         <DashboardHeader />
+        <TextInputPanel />
+        <QuickActionsPanel />
       </div>
     </div>
   );
